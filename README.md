@@ -62,9 +62,9 @@ pip install pandas matplotlib seaborn
 
 ## Example
 
-To analyze a dataset named `traffic_data_2024.csv` and save results as `output_data.csv`:
+To analyze the dataset `traffic_accidents.csv` and save results as `output_data.csv`:
 ```bash
-python traffic_accidents_analysis.py traffic_data_2024.csv output_data.csv
+python traffic_accidents_analysis.py traffic_accidents.csv output_data.csv
 ```
 
 ## Notes
