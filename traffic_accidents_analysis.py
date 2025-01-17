@@ -55,9 +55,8 @@ def perform_eda(data):
     plt.savefig('eda_accidents_reported.png')
     plt.close()
 
+# Generate visualizations for the dataset
 def visualize_data(data):
-    # Generate visualizations for the dataset
-
     # Total accidents reported by country
     plt.figure(figsize=(10, 6))
     data.groupby('Country')['Accidents Reported'].sum().sort_values().plot(kind='barh')
@@ -70,7 +69,7 @@ def visualize_data(data):
 
     # Average Fatality Rate by Accident Type
     plt.figure(figsize=(10, 6))
-    data.groupby('Accident Type')['Fatality Rate'].mean().sort_values().plot(kind='bar', color='orange')
+    data.groupby('Accident Type')['Fatality Rate'].mean().sort_values().plot(kind='bar', color='pink')
     plt.title('Average Fatality Rate by Accident Type')
     plt.xlabel('Accident Type')
     plt.ylabel('Average Fatality Rate (%)')
@@ -80,7 +79,7 @@ def visualize_data(data):
 
     # Impact of Road Safety Measures on Fatality Rate
     plt.figure(figsize=(10, 6))
-    data.groupby('Road Safety Measures')['Fatality Rate'].mean().sort_values().plot(kind='bar', color='green')
+    data.groupby('Road Safety Measures')['Fatality Rate'].mean().sort_values().plot(kind='bar', color='#ff747f')
     plt.title('Impact of Road Safety Measures on Fatality Rate')
     plt.xlabel('Road Safety Measures')
     plt.ylabel('Average Fatality Rate (%)')
