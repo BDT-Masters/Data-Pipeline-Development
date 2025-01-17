@@ -44,6 +44,11 @@ Exploratory Data Analysis is a vital step in uncovering patterns and trends in t
 
 These visualizations are saved as PNG files, ensuring they can be easily shared and reused for reporting and presentation purposes.
 
+![alt text](https://github.com/BDT-Masters/Data-Pipeline-Development/blob/main/images/eda_accidents_reported.png)
+![alt text](https://github.com/BDT-Masters/Data-Pipeline-Development/blob/main/images/total_accidents_reported.png)
+![alt text](https://github.com/BDT-Masters/Data-Pipeline-Development/blob/main/images/average_fatality_rate.png)
+![alt text](https://github.com/BDT-Masters/Data-Pipeline-Development/blob/main/images/impact_road_safety_measures.png)
+
 ### 6. Data Storage
 To preserve the results of the pipeline, the `save_data` function saves both processed and aggregated datasets in CSV format. This step ensures:
 
